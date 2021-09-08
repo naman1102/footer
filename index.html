@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f27fe0e8ea.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo.png" alt="logo">
+        <div class="menu-right">
+            <span class="repair" onclick="myMenu()"><i onclick="mybutton(this)" class="fa fa-bars"></i></span>
+            <ul style="display:flex; flex-basis:auto; justify-content:flex-end;"id="menu" class="repair2">
+                <li style="margin: 10px;">Home</li>
+                <li style="margin: 10px;">Services</li>
+                <li style="margin: 10px;">Projects</li>
+                <li style="margin: 10px;">About us</li>
+                <li style="margin: 10px;">Contact</li>
+            </ul>
+        </div>
+    </div>
+    <section></section>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <img src="logo.png" alt="logo" class="logo">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, delectus.</p>
+            </div>
+            <div class="col">
+                <h3>Address<div class="underline"><span></span></div>
+                </h3>
+                <p>106, Satguru Parnay</p>
+                <p>Infornt of C21, Indore</p>
+                <p>Madhya pradesh,Pin 452010, India</p>
+                <p class="email-id">xyz@gmail.com</p>
+                <h4>+91-8815886550</h4>
+            </div>
+            <div class="col">
+                <h3>Links<div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Newsletter<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-wordpress"></i>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Naman mehta @ 2021 - Copyrights</p>
+    </footer>
+    <script>
+        function mybutton(x) {
+            x.classList.toggle("fa-window-close");
+        }
+
+        function myMenu(){
+            var menu = document.getElementById("menu")
+            if (menu.style.display == "block"){
+                menu.style.display = "none";
+            }
+            else{
+                menu.style.display = "block";
+            }
+
+        }
+    </script>
+</body>
+</html>
