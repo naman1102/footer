@@ -64,6 +64,15 @@ section{
     background-size: cover;
     height: 100vh;
     }
+
+    .navbar{
+        background: linear-gradient(to bottom, #6d435b, #2c0b44) ;
+    }
+
+    footer{
+        background: #2c0b44 !important;
+    }
+
 }
 
 
